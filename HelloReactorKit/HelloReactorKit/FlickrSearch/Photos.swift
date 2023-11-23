@@ -26,3 +26,10 @@ struct Photo: Codable {
     let title: String
     let ispublic, isfriend, isfamily: Int
 }
+
+// MARK: - EXTENSIONS
+extension Photo {
+    var imageUrl: URL? {
+        return URL(string: "https://farm\(farm).staticflickr.com/\(server)/\(id)_\(secret).jpg")
+    }
+}

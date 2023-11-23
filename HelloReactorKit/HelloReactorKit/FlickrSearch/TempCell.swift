@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TempCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
-    
+
 }

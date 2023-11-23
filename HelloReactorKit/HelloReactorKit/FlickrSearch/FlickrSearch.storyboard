@@ -87,11 +87,44 @@
                     <navigationItem key="navigationItem" title="FlickrSearch" id="RIo-Wa-6U1"/>
                     <connections>
                         <outlet property="collectionView" destination="daG-sj-jPB" id="oDy-ML-TbU"/>
+                        <segue destination="D3D-Hn-tkY" kind="show" identifier="goToDetailVC" id="use-dn-Tpm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="834" y="4"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="qme-Ia-Im9">
+            <objects>
+                <viewController id="D3D-Hn-tkY" customClass="DetailViewController" customModule="HelloReactorKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nXW-Ft-1Z5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="prm-Mm-m4o">
+                                <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6e5-74-MeN"/>
+                                    <constraint firstAttribute="width" constant="300" id="edP-Ka-9Ha"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1DW-Ya-5ft"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="prm-Mm-m4o" firstAttribute="centerX" secondItem="nXW-Ft-1Z5" secondAttribute="centerX" id="xCv-VY-udX"/>
+                            <constraint firstItem="prm-Mm-m4o" firstAttribute="centerY" secondItem="nXW-Ft-1Z5" secondAttribute="centerY" id="zMu-zK-VED"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HqU-Ug-QeE"/>
+                    <connections>
+                        <outlet property="imageView" destination="prm-Mm-m4o" id="4qp-XE-2Iu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDa-zr-ULM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q4Z-zG-gOo">

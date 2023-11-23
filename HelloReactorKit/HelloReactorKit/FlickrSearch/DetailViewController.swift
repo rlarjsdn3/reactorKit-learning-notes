@@ -1,5 +1,5 @@
 //
-//  ImageCell.swift
+//  DetailViewController.swift
 //  HelloReactorKit
 //
 //  Created by 김건우 on 11/23/23.
@@ -9,8 +9,8 @@ import UIKit
 
 import Kingfisher
 
-class ImageCell: UICollectionViewCell {
-    
+final class DetailViewController: UIViewController {
+
     @IBOutlet weak private var imageView: UIImageView!
     
     var imageUrl: URL? {
@@ -20,9 +20,9 @@ class ImageCell: UICollectionViewCell {
         }
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         imageView.contentMode = .scaleAspectFill
     }
-    
+
 }

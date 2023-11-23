@@ -76,6 +76,7 @@
 		9ED38DF02B0EF8A60067AA14 /* HelloReactorKit */ = {
 			isa = PBXGroup;
 			children = (
+				9ED38E202B0F5C220067AA14 /* New Group */,
 				9ED38DF12B0EF8A60067AA14 /* AppDelegate.swift */,
 				9ED38DF32B0EF8A60067AA14 /* SceneDelegate.swift */,
 				9ED38DF72B0EF8A60067AA14 /* Main.storyboard */,
@@ -105,6 +106,13 @@
 				9ED38E0D2B0EF9560067AA14 /* GitHubSearchViewController.swift */,
 			);
 			path = GitHubSearch;
+			sourceTree = "<group>";
+		};
+		9ED38E202B0F5C220067AA14 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

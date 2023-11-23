@@ -31,7 +31,7 @@ final class CounterViewReactor: Reactor {
         // ⭐️ Pulse 프로퍼티 래퍼 기본 이론: 
         // - 동일한 값이든, 다른 값이든 상관없이 값을 새로 할당하면(valueUpdatedCount 값이 바뀌면) 이벤트를 방출함.
         
-        // State 이벤트는 값이 변화 유무에 상관없이 항상 전체 이벤트를 뷰에 방출함.
+        // State 이벤트는 값이 변화 유무에 상관없이 항상 전체 요소 이벤트를 뷰에 방출함.
         // (즉, 다른 프로퍼티가 변경되어도 전체 State 이벤트를 뷰에 방출함. 이런 이유로 distinctUntilChange() 연산자로 동일한 이벤트를 필터링해야 함)
         // 그에 반해, Pulse 이벤트는 지정한 프로퍼티에 동일한 값이든, 다른 값이든 상관없이 새로운 값이 할당되는 경우에만 이벤트를 방출함.
         // (즉, 다른 프로퍼티가 변경되어도 Pulse 프로퍼티에 새로운 값을 할당하지 않았다면 이벤트를 방출하지 않음)
@@ -64,6 +64,7 @@ final class CounterViewReactor: Reactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .increase:
+            print(self.action)
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
                 Observable.just(Mutation.increaseValue).delay(.milliseconds(500), scheduler: MainScheduler.instance),

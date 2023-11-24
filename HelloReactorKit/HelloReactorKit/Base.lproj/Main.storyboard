@@ -123,12 +123,12 @@
         <!--GitHubSearch-->
         <scene sceneID="BGl-gx-a3H">
             <objects>
-                <viewControllerPlaceholder storyboardName="GitHubSearch" id="me4-p3-tKh" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="GitHubSearch" referencedIdentifier="GitHubSearch" id="me4-p3-tKh" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="HY9-1N-Cvy"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdH-ZA-gG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1503" y="-121"/>
+            <point key="canvasLocation" x="1503" y="-113"/>
         </scene>
         <!--Flickr-->
         <scene sceneID="aLo-AC-6d7">
@@ -138,7 +138,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4KQ-bT-dRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496" y="-154"/>
+            <point key="canvasLocation" x="1464" y="-148"/>
         </scene>
     </scenes>
     <resources>

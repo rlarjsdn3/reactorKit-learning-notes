@@ -14,7 +14,6 @@ import RxSwift
 
 final class FlickrSearchViewController: UIViewController, StoryboardView {
     @IBOutlet weak var collectionView: UICollectionView!
-    
     let searchController = UISearchController(searchResultsController: nil)
     
     var disposeBag: DisposeBag = DisposeBag()
@@ -33,10 +32,8 @@ final class FlickrSearchViewController: UIViewController, StoryboardView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureUI()
         configureLayout()
-        
         bind(reactor: flickrSearchViewReactor)
     }
     
@@ -51,10 +48,10 @@ final class FlickrSearchViewController: UIViewController, StoryboardView {
     }
     
     private func configureUI() {
+        navigationItem.searchController = searchController
+        
         searchController.searchBar.placeholder = "이미지 이름 검색"
         searchController.hidesNavigationBarDuringPresentation = false
-    
-        navigationItem.searchController = searchController
     }
     
     private func configureLayout() {

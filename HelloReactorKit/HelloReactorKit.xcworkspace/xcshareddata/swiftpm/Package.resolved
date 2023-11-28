@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "urlnavigator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/URLNavigator",
+      "state" : {
+        "revision" : "b881f23dc3b381986ed6cf76da8e426ce5c8a7ee",
+        "version" : "2.5.1"
+      }
+    },
+    {
       "identity" : "weakmaptable",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactorKit/WeakMapTable.git",
